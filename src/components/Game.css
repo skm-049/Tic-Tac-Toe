@@ -1,0 +1,68 @@
+.container{
+    width:100%;
+    min-height:100vh;
+    padding:1rem;
+}
+.main-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem auto;
+}
+.board{
+    width:15.5rem;
+    height:15.5rem;
+    display: grid;
+    grid-template-areas: 
+    "square square square"
+    "square square square"
+    "square square square";
+    border: 4px solid white;
+    margin:1rem 2rem;
+
+}
+.square{
+    width:5rem;
+    height:5rem;
+    grid-area: square;
+}
+
+.square button{
+    width:100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 700;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.square button.winner-square{
+    color:red;
+    background-color: yellow;
+}
+.title{
+    text-align: center;
+}
+.status{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.history-ol{
+    display: flex;
+    flex-direction: column;
+    margin:1rem 2rem;
+}
+
+.history-li{
+    margin-bottom: 10px;
+}
+.history-li button{
+    font-size: 1.25rem;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+    
+}
+
